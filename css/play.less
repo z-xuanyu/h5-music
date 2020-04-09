@@ -1,0 +1,192 @@
+@charset "utf-8";
+@rem:1080/16rem;
+// play wrap
+.play-wrap{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: radial-gradient(circle closest-corner at center 40%, #300c0c 5rem ,#190808);
+    .play-title{
+        width: 100%;
+        height: 100/@rem;
+        position: absolute;
+        top: 110/@rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 36/@rem 0 50/@rem;
+        box-sizing: border-box;
+        align-items: center;
+        .back-song-name{
+            display: flex;
+            box-sizing: border-box;
+            height: 100/@rem;
+            .song-name {
+                margin-left: 50/@rem;
+                box-sizing: border-box;
+                h5{
+                    font-size: 42/@rem;
+                    color: #fff;
+                    margin-bottom: 20/@rem;
+                }
+                .name{
+                    font-size: 30/@rem;
+                    color: #6e6b6b;
+                }
+            }
+        }
+        span{
+            font-size: 55/@rem;
+            color: #fff;
+        }
+    }
+    .disc{
+        width: 538/@rem;
+        height: 538/@rem;
+        border-radius: 50%;
+        background-color: #000;
+        position: absolute;
+        left: 50%;
+        margin-left: -269/@rem;
+        top: 530/@rem;
+        padding: 50/@rem;
+        box-sizing: border-box;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+    .play-tips{
+        width: 550/@rem;
+        height: 83/@rem;
+        text-align: center;
+        position: absolute;
+        bottom: 545/@rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 40/@rem;
+        background-color: #160606;
+        span{
+            font-size: 24/@rem;
+            color: #fff;
+        }
+        .red{
+            color: red;
+        }
+    }
+    // 播放控件 开始
+    .play-control{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 55/@rem;
+        box-sizing: border-box;
+        //分享与评论控件 开始
+        .control-share{
+            margin-bottom: 70/@rem;
+            display: flex;
+            color: #fff;
+            justify-content: space-between;
+            padding: 0 90/@rem;
+            box-sizing: border-box;
+            span{
+                font-size: 55/@rem;
+            }
+        }
+        // 分享与评论控件 结束
+        //播放进度条 开始
+        .progress-wrap {
+            margin-bottom: 75/@rem;
+            display: flex;
+            justify-content: space-between;
+
+            .play-time {
+                display: flex;
+                width: 60/@rem;
+                height: 20/@rem;
+                color: #fff;
+                font-size: 20/@rem;
+                vertical-align: middle;
+            }
+
+            .play-progress {
+                width: 785/@rem;
+                height: 3/@rem;
+                background-color: #322c2c;
+                margin-top: 10/@rem;
+                position: relative;
+                .progress-bg{
+                    height: 100%;
+                    background-color:#f60;
+                }
+                .progress-bar{
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    margin-top: -8/@rem;
+                    width: 16/@rem;
+                    height: 16/@rem;
+                    background-color: #fff;
+                    border-radius: 50%;
+                }
+            }
+        }
+        //播放进度条结束
+        //播放控件列表 开始
+        .control-playlist{
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            margin-bottom: 65/@rem;
+            padding: 0 90/@rem;
+            box-sizing: border-box;
+            align-items: center;
+            height: 140/@rem;
+            span{
+                font-size: 55/@rem;
+            }
+            .playing {
+                font-size: 138/@rem;
+                
+            }
+            
+        }
+        //播放控件列表结束.
+    }
+     // 歌曲歌词开始
+    .song-lyrics {
+        width: 100%;
+        height: 1100/@rem;
+        position: fixed;
+        top: 250/@rem;
+        left: 0;
+        right: 0;
+        padding: 100/@rem 150/@rem;
+        box-sizing: border-box;
+        overflow: hidden;
+        opacity: 0;
+        .song-lyrics-wrap{
+            position: absolute;
+            top: 250/@rem;
+            left: 0;
+            right: 0;
+            transition: all .5s linear;
+            p {
+                font-size: 40/@rem;
+                text-align: center;
+                line-height: 110/@rem;
+                color: #8e8383;
+            }
+        }
+    }
+     // 歌曲歌词结束
+}
+@keyframes disc {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}

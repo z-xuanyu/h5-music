@@ -1,0 +1,177 @@
+@charset "utf-8";
+.play-wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: radial-gradient(circle closest-corner at center 40%, #300c0c 5rem, #190808);
+}
+.play-wrap .play-title {
+  width: 100%;
+  height: 1.48148148rem;
+  position: absolute;
+  top: 1.62962963rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.53333333rem 0 0.74074074rem;
+  box-sizing: border-box;
+  align-items: center;
+}
+.play-wrap .play-title .back-song-name {
+  display: flex;
+  box-sizing: border-box;
+  height: 1.48148148rem;
+}
+.play-wrap .play-title .back-song-name .song-name {
+  margin-left: 0.74074074rem;
+  box-sizing: border-box;
+}
+.play-wrap .play-title .back-song-name .song-name h5 {
+  font-size: 0.62222222rem;
+  color: #fff;
+  margin-bottom: 0.2962963rem;
+}
+.play-wrap .play-title .back-song-name .song-name .name {
+  font-size: 0.44444444rem;
+  color: #6e6b6b;
+}
+.play-wrap .play-title span {
+  font-size: 0.81481481rem;
+  color: #fff;
+}
+.play-wrap .disc {
+  width: 7.97037037rem;
+  height: 7.97037037rem;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.98518519rem;
+  top: 7.85185185rem;
+  padding: 0.74074074rem;
+  box-sizing: border-box;
+}
+.play-wrap .disc img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.play-wrap .play-tips {
+  width: 8.14814815rem;
+  height: 1.22962963rem;
+  text-align: center;
+  position: absolute;
+  bottom: 8.07407407rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.59259259rem;
+  background-color: #160606;
+}
+.play-wrap .play-tips span {
+  font-size: 0.35555556rem;
+  color: #fff;
+}
+.play-wrap .play-tips .red {
+  color: red;
+}
+.play-wrap .play-control {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 0.81481481rem;
+  box-sizing: border-box;
+}
+.play-wrap .play-control .control-share {
+  margin-bottom: 1.03703704rem;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  padding: 0 1.33333333rem;
+  box-sizing: border-box;
+}
+.play-wrap .play-control .control-share span {
+  font-size: 0.81481481rem;
+}
+.play-wrap .play-control .progress-wrap {
+  margin-bottom: 1.11111111rem;
+  display: flex;
+  justify-content: space-between;
+}
+.play-wrap .play-control .progress-wrap .play-time {
+  display: flex;
+  width: 0.88888889rem;
+  height: 0.2962963rem;
+  color: #fff;
+  font-size: 0.2962963rem;
+  vertical-align: middle;
+}
+.play-wrap .play-control .progress-wrap .play-progress {
+  width: 11.62962963rem;
+  height: 0.04444444rem;
+  background-color: #322c2c;
+  margin-top: 0.14814815rem;
+  position: relative;
+}
+.play-wrap .play-control .progress-wrap .play-progress .progress-bg {
+  height: 100%;
+  background-color: #f60;
+}
+.play-wrap .play-control .progress-wrap .play-progress .progress-bar {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -0.11851852rem;
+  width: 0.23703704rem;
+  height: 0.23703704rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.play-wrap .play-control .control-playlist {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  margin-bottom: 0.96296296rem;
+  padding: 0 1.33333333rem;
+  box-sizing: border-box;
+  align-items: center;
+  height: 2.07407407rem;
+}
+.play-wrap .play-control .control-playlist span {
+  font-size: 0.81481481rem;
+}
+.play-wrap .play-control .control-playlist .playing {
+  font-size: 2.04444444rem;
+}
+.play-wrap .song-lyrics {
+  width: 100%;
+  height: 16.2962963rem;
+  position: fixed;
+  top: 3.7037037rem;
+  left: 0;
+  right: 0;
+  padding: 1.48148148rem 2.22222222rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  opacity: 0;
+}
+.play-wrap .song-lyrics .song-lyrics-wrap {
+  position: absolute;
+  top: 3.7037037rem;
+  left: 0;
+  right: 0;
+  transition: all .5s linear;
+}
+.play-wrap .song-lyrics .song-lyrics-wrap p {
+  font-size: 0.59259259rem;
+  text-align: center;
+  line-height: 1.62962963rem;
+  color: #8e8383;
+}
+@keyframes disc {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,143 @@
+@charset "utf-8";
+.recommend-wrap {
+  width: 100%;
+  position: relative;
+  padding-bottom: 1.97037037rem;
+  box-sizing: border-box;
+}
+.recommend-wrap .recommend-header {
+  height: 7.94074074rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.97777778rem 0.65185185rem 0.71111111rem;
+}
+.recommend-wrap .recommend-header .recommend-control {
+  display: flex;
+  justify-content: space-between;
+}
+.recommend-wrap .recommend-header .recommend-control .back {
+  width: 0.88888889rem;
+  height: 0.88888889rem;
+  line-height: 0.88888889rem;
+}
+.recommend-wrap .recommend-header .recommend-control span {
+  font-size: 0.82962963rem;
+  color: #fff;
+}
+.recommend-wrap .recommend-content {
+  width: 100%;
+  position: absolute;
+  top: 7.33333333rem;
+  border-radius: 0.71111111rem 0.71111111rem 0 0;
+  background-color: #fff;
+  padding: 0 0.65185185rem;
+  box-sizing: border-box;
+}
+.recommend-wrap .recommend-content .recommend-content-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.2962963rem;
+}
+.recommend-wrap .recommend-content .recommend-content-title a span {
+  font-size: 0.85925926rem;
+  color: #333;
+  vertical-align: middle;
+}
+.recommend-wrap .recommend-content .recommend-content-title a .name {
+  font-size: 0.57777778rem;
+  vertical-align: middle;
+}
+.recommend-wrap .recommend-content .recommend-wrap {
+  margin-top: 0.59259259rem;
+}
+.recommend-wrap .recommend-content .recommend-wrap ul li a {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.38518519rem 0;
+}
+.recommend-wrap .recommend-content .recommend-wrap ul li a .song-item {
+  display: flex;
+}
+.recommend-wrap .recommend-content .recommend-wrap ul li a .song-item .song-img {
+  margin-right: 0.41481481rem;
+}
+.recommend-wrap .recommend-content .recommend-wrap ul li a .song-item .song-img img {
+  width: 1.62962963rem;
+  height: 1.62962963rem;
+  border-radius: 0.14814815rem;
+}
+.recommend-wrap .recommend-content .recommend-wrap ul li a .song-item .song-info {
+  flex: 1;
+}
+.recommend-wrap .recommend-content .recommend-wrap ul li a .song-item .song-info .song-title {
+  font-size: 0.56296296rem;
+  color: #333;
+  margin-top: 0.20740741rem;
+}
+.recommend-wrap .recommend-content .recommend-wrap ul li a .song-item .song-info .singer {
+  font-size: 0.41481481rem;
+  color: #808080;
+  margin-top: 0.35555556rem;
+}
+.recommend-wrap .recommend-content .recommend-wrap ul li a .song-play {
+  display: flex;
+  justify-content: center;
+}
+.recommend-wrap .recommend-content .recommend-wrap ul li a .song-play span {
+  font-size: 1.3037037rem;
+  color: #333;
+}
+.recommend-wrap .control {
+  border-top: 1px solid #e6e6e6;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.97037037rem;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999999;
+  box-sizing: border-box;
+  display: none;
+}
+.recommend-wrap .control .control-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.20740741rem 0.32592593rem 0 0.23703704rem;
+  box-sizing: border-box;
+}
+.recommend-wrap .control .control-wrap .song-content {
+  display: flex;
+}
+.recommend-wrap .control .control-wrap .song-content img {
+  width: 1.51111111rem;
+  height: 1.51111111rem;
+  margin-right: 0.23703704rem;
+  border-radius: 50%;
+}
+.recommend-wrap .control .control-wrap .song-content .song-info {
+  flex: 1;
+}
+.recommend-wrap .control .control-wrap .song-content .song-info .song-name {
+  font-size: 0.5037037rem;
+  color: #333;
+  margin-top: 0.17777778rem;
+}
+.recommend-wrap .control .control-wrap .song-content .song-info .song-des {
+  font-size: 0.41481481rem;
+  color: #909090;
+  margin-top: 0.32592593rem;
+}
+.recommend-wrap .control .control-wrap .song-play {
+  display: flex;
+  margin-top: 0.23703704rem;
+}
+.recommend-wrap .control .control-wrap .song-play .iconfont.icon-bofang1 {
+  font-size: 0.97777778rem;
+  color: #4e4e4e;
+  margin-right: 0.44444444rem;
+}
+.recommend-wrap .control .control-wrap .song-play .iconfont.icon-bofangliebiao {
+  font-size: 1.06666667rem;
+  color: #4d4d4d;
+}

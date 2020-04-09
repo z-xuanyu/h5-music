@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1268092_bit0mp0i8fw.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/play.css">
+    <script src="../js/play.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <title>play</title>
+</head>
+<body>
+    <div class="play-wrap">
+        <!-- playing title start -->
+        <div class="play-title">
+            <div class="back-song-name">
+                <a href="../src/recommend.html">
+                    <span class="iconfont icon-youjiantou1"></span>
+                </a>
+                <div class="song-name">
+                    <h5>我们的天空</h5>
+                    <div class="name">黄家驹</div>
+                </div>
+            </div>
+            <div class="problem">
+                <a href="#">
+                    <span class="iconfont icon-fenxiang"></span>
+                </a>
+            </div>
+        </div>
+        <!-- playing title end -->
+        <!-- 旋转光碟 开始-->
+        <div class="disc">
+            <img src="https://p1.music.126.net/FnfnpdOcQZpq8opCbab5lQ==/17642763579666713.jpg">
+        </div>
+        <!-- 旋转光碟结束 -->
+        <!-- 播放控件 开始-->
+        <!-- 提示信息 -->
+        <div class="play-tips">
+            <span>开启边听边存,美网也能听</span>
+            <span class="red">去开启</span>
+        </div>
+        <!-- 控件 开始 -->
+        <div class="play-control">
+            <!-- 分享与评论控件 开始-->
+            <div class="control-share">
+                <span class="iconfont icon-xinaixin"></span>
+                <span class="iconfont icon-dibar-xiazai"></span>
+                <span class="iconfont icon-jingyunyinxiaopt-wangyiicon"></span>
+                <span class="iconfont icon-pinglun"></span>
+                <span class="iconfont icon-fenxiang"></span>
+            </div>
+            <!-- 分享与评论控件 结束 -->
+            <!-- 播放进度条 开始-->
+            <div class="progress-wrap">
+                <div class="play-time">
+                    00:00
+                </div>
+                <div class="play-progress">
+                    <div class="progress-bg"></div>
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="play-time">
+                    00:00
+                </div>
+            </div>
+            <!-- 播放进度条 结束 -->
+            <!-- 播放按键列表 开始 -->
+            <div class="control-playlist">
+                <span class="iconfont icon-bofangye-caozuolan-xunhuan"></span>
+                <span class="iconfont icon-shangyishoushangyige1"></span>
+                <span class="playing iconfont icon-iconzanting"></span>
+                <span class="iconfont icon-xiayishou"></span>
+                <span class="iconfont icon-bofangliebiao"></span>
+            </div>
+            <!-- 播放按键列表结束 -->
+
+        </div>
+        <!-- 播放控件 结束 -->
+        <!-- 歌曲歌词 开始 -->
+        <div class="song-lyrics">
+            <div class="song-lyrics-wrap">
+
+            </div>
+        </div>
+        <!-- 歌曲歌词 结束 -->
+    </div>
+    <script>
+        // 移动适配
+        var styleNode = document.createElement('style');
+        var w = document.documentElement.clientWidth / 16;
+        styleNode.innerHTML = `html{font-size:${w}px!important}`;
+        document.head.append(styleNode);
+    </script>
+</body>
+</html>

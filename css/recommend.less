@@ -1,0 +1,167 @@
+@charset "utf-8";
+// 全局变量
+@rem: 1080/16rem;
+// recommend srart
+.recommend-wrap{
+    width: 100%;
+    position: relative;
+    padding-bottom: 133/@rem;
+    box-sizing: border-box;
+    // header start
+    .recommend-header{
+        height: 536/@rem;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 66/@rem 44/@rem 48/@rem;
+        .recommend-control{
+            display: flex;
+            justify-content: space-between;
+            .back{
+                width: 60/@rem;
+                height: 60/@rem;
+                line-height: 60/@rem;   
+            }
+            span{
+                font-size: 56/@rem;
+                color: #fff;
+            }
+        }
+        
+    }
+    // header end
+    .recommend-content{
+        width: 100%;
+        position: absolute;
+        top: 495/@rem;
+        border-radius: 48/@rem 48/@rem 0 0;
+        background-color: #fff;
+        padding: 0 44/@rem;
+        box-sizing: border-box;
+        .recommend-content-title{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20/@rem;
+            a{
+                span{
+                    font-size: 58/@rem;
+                    color: #333;
+                    vertical-align: middle;
+                }
+                .name{
+                    font-size: 39/@rem;
+                    vertical-align: middle;
+                }
+            }
+        }
+        // song list start
+        .recommend-wrap{
+            margin-top: 40/@rem;
+            ul{
+                li{
+                    a{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 26/@rem 0;
+                        .song-item{
+                            display: flex;
+                            .song-img{
+                                margin-right: 28/@rem;
+                                img {
+                                    width: 110/@rem;
+                                    height: 110/@rem;
+                                    border-radius: 10/@rem;
+                                }
+                            }
+                            .song-info{
+                                flex: 1;
+                                .song-title{
+                                    font-size: 38/@rem;
+                                    color: #333;
+                                    margin-top: 14/@rem;
+                                }
+                                .singer{
+                                    font-size: 28/@rem;
+                                    color: #808080;
+                                    margin-top: 24/@rem;
+                                }
+                            }
+                        }
+                        //播放图标
+                        .song-play{
+                            display: flex;
+                            justify-content: center;
+                            span{
+                                font-size: 88/@rem;
+                                color: #333;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .control {
+        border-top: 1px solid #e6e6e6;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 133/@rem;
+        width: 100%;
+        background-color: #fff;
+        z-index: 999999;
+        box-sizing: border-box;
+        display: none;
+        .control-wrap {
+            display: flex;
+            justify-content: space-between;
+            padding: 14/@rem 22/@rem 0 16/@rem;
+            box-sizing: border-box;
+
+            .song-content {
+                display: flex;
+
+                img {
+                    width: 102/@rem;
+                    height: 102/@rem;
+                    margin-right: 16/@rem;
+                    border-radius: 50%;
+                }
+
+                .song-info {
+                    flex: 1;
+
+                    .song-name {
+                        font-size: 34/@rem;
+                        color: #333;
+                        margin-top: 12/@rem;
+                    }
+
+                    .song-des {
+                        font-size: 28/@rem;
+                        color: #909090;
+                        margin-top: 22/@rem;
+                    }
+                }
+            }
+
+            // play control
+            .song-play {
+                display: flex;
+                margin-top: 16/@rem;
+
+                .iconfont.icon-bofang1 {
+                    font-size: 66/@rem;
+                    color: #4e4e4e;
+                    margin-right: 30/@rem;
+                }
+
+                .iconfont.icon-bofangliebiao {
+                    font-size: 72/@rem;
+                    color: #4d4d4d;
+                }
+            }
+
+        }
+    }
+}
